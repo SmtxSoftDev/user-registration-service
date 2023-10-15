@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7b148973-4007-4057-afd6-c7a9d74e0808</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IGeekFan.AspNetCore.RapiDoc" Version="0.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.ReDoc" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Users.Registration.Application\Users.Registration.Application.csproj" />
+    <ProjectReference Include="..\Users.Registration.Domain\Users.Registration.Domain.csproj" />
+    <ProjectReference Include="..\Users.Registration.Infrastructure\Users.Registration.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
